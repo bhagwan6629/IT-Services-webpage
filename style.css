@@ -123,6 +123,7 @@ body {
     /* align-items: center; */
     justify-content: space-between;
     height: 100%;
+    flex-wrap: wrap;
   }
   .main-container2 .services-div .service-box{
     border: 1px solid black;
