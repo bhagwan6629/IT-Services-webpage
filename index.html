@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IT Services</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="container">
-      <h1>IT Services</h1>
+      <div class="logo">
+        <img src="/Project2/images/logo.webp" width="70px" alt="">
+      </div>
       <nav>
         <ul>
+          <li><a href="#home">Home</a></li> 
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -20,31 +23,64 @@
       </nav>
     </div>
   </header>
+  <!--Home Section-->
+  <section id="home">
+    <div class="main-container">
+      <p>We provide top-notch IT solutions to businesses of all sizes. <br>Our expertise spans across web development, cloud computing, and cybersecurity.</p>
+    </div>
+  </section>
 
   <!-- About Us Section -->
   <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
+    <div class="main-container1">
+      <div class="col1">
+        <img src="/Project2/images/main-img.avif" width="400px" alt="">
+      </div>
+      <div class="col2">
+        <h2>About Us</h2>
       <p>We provide top-notch IT solutions to businesses of all sizes. Our expertise spans across web development, cloud computing, and cybersecurity.</p>
+      </div>
     </div>
   </section>
 
   <!-- Services Section -->
   <section id="services">
-    <div class="container">
+    <div class="main-container2">
       <h2>Our Services</h2>
-      <ul>
+      <div class="services-div">
+        <div class="service-box">
+            <img src="/Project2/images/main-img.avif" alt="">
+            <h3>Web Development</h3>
+            <p>Our team of expert developers can help you build a custom website that meets your business.
+        </div>
+        <div class="service-box">
+            <img src="/Project2/images/srvc2.jpg" alt="">
+            <h3>Cloud Solutions</h3>
+            <p>Our team of expert developers can help you build a custom website that meets your business.
+        </div>
+        <div class="service-box">
+            <img src="/Project2/images/srvc3.jpg" alt="">
+            <h3>Cybersecurity</h3>
+            <p>Our team of expert developers can help you build a custom website that meets your business.
+        </div>
+        <div class="service-box">
+            <img src="/Project2/images/srvc5.jpg" alt="">
+            <h3>IT Consulting</h3>
+            <p>Our team of expert developers can help you build a custom website that meets your business.
+        </div>
+      </div>
+      <!-- <ul>
         <li>Web Development</li>
         <li>Cloud Solutions</li>
         <li>Cybersecurity</li>
         <li>IT Consulting</li>
-      </ul>
+      </ul> -->
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
-    <div class="container">
+    <div class="main-container3">
       <h2>Contact Us</h2>
       <p>Have questions? Reach out to us!</p>
       <form>
@@ -64,7 +100,7 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container">
+    <div class="footer-container">
       <p>&copy; 2024 IT Services. All rights reserved.</p>
     </div>
   </footer>
