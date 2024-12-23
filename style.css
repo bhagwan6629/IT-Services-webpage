@@ -145,6 +145,12 @@ section {
   width: 400px;
   height: 550px;
 }
+#about .main-container1 .col2 p span{
+  font-size: 1.1rem;
+  /* color: rgb(148, 9, 190); */
+  color: #32aa37;
+  text-decoration: underline;
+}
 section h2 {
   text-align: center;
   margin-bottom: 1rem;
