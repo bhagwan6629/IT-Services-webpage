@@ -33,9 +33,13 @@ header .container{
   text-transform: uppercase;
   margin-left: 6rem;
 }
+#checkbox{
+  display: none;
+}
 nav{
   /* border: 1px solid green; */
   width: 100vw;
+  /* display: none; */
 }
 header .container nav ul{
   display: flex;
@@ -49,7 +53,6 @@ header .container nav ul{
     position: relative;
     font-size: 20px;
   }
-  
   header nav ul li a::before{
     content: "";
     height: 2px;
@@ -64,6 +67,18 @@ header .container nav ul{
   }
   header nav ul li a:hover{
     color:#32aa37;
+  }
+  header nav ul li label{
+    display: none;
+  }
+  header .bar-icon{
+    margin-right: 20px;
+    font-size: 22px;
+    display: none;
+  }
+  header .bar-icon:hover i{
+    cursor: pointer;
+    transform: scale(1.2);
   }
   /* Section Styles */
 
@@ -148,15 +163,15 @@ header .container nav ul{
   .main-container2{
     display: flex;
     flex-direction: column;
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
-    /* border: 1px solid yellow; */
   }
   .main-container2 .services-div{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 40px;
+    gap: 20px;
   }
   .main-container2 .services-div .service-box{
     /* border: 1px solid black; */
@@ -188,6 +203,7 @@ header .container nav ul{
   .main-container3{
     display: flex;
     justify-content: space-around;
+    width: 100%;
   }
   .main-container3 h2{
     background-color: #32aa37;
@@ -211,6 +227,8 @@ header .container nav ul{
     font-size: 15px;
     width: 98%;
     height: 30px;
+    border: none;
+    border: 1px solid black;
   }
   .form textarea{
     width: 98%;
@@ -227,11 +245,20 @@ header .container nav ul{
     background-color: #2ecc71;
     cursor: pointer;
   }
+  .form input:active{
+    box-shadow: 0 0 15px #fbc903;
+  }
   .main-container3 .details{
     /* border: 1px solid red; */
     width: 500px;
     padding: 10px;
     background-color: #cecbcb;
+  }
+  .main-container3 .details a{
+    text-decoration: none;
+  }
+  .main-container3 .details a:hover{
+    text-decoration: underline;
   }
   /* Footer Styles */
   footer {
@@ -243,3 +270,67 @@ header .container nav ul{
     border-top: 2px solid white;
   }
   
+  /* Media queries */
+  @media (max-width: 768px) {
+    header{
+      width: 100%;
+    }
+    header .bar-icon{
+      display: inline-block;
+    }
+    header nav{
+      position: absolute;
+      top: 0;
+      left: -800px;
+      height: 100vh;
+      width: 100vw;
+      background-color: white;
+      /* border: 1px solid blue; */
+      transition: all 0.4s;
+    }
+    header nav ul{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* border: 1px solid yellow; */
+    }
+    header nav ul li{
+      width: 100%;
+      /* border: 1px solid black; */
+      text-align: center;
+      margin-left: -40px;
+      line-height: 50px;
+      position: relative;
+    }
+    header nav ul li a:hover{
+      color: black;
+    }
+    header nav ul li a:hover::before{
+      width: 0%;
+    }
+    header nav ul li:hover{
+      box-shadow: 0 0 15px black;
+    }
+    header nav ul li label{
+      display: inline-block;
+      position: absolute;
+      right: 25px;
+      font-size: 22px;
+    }
+    header nav ul li label:hover i{
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+    #checkbox:checked~nav{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .main-container{
+      width: 100%;
+    }
+    .main-container .heading h1{
+      font-size: 1.5rem;
+      line-height: 2rem;    }
+
+  }
