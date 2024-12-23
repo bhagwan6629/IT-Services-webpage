@@ -1,4 +1,4 @@
-# New Project
+# IT service company project
   
-This Projects was created from local system
-Created  by Bhagwan Golhar.
+This project create a website 
+of IT service company using HTML , CSS.
