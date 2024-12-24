@@ -159,13 +159,13 @@ section h2 {
 #about,
 #services,
 #contact {
-  background: #f4f4f4;
+  background: rgb(244, 244, 244);
   margin: 1rem 0;
   border-radius: 5px;
   padding: 1.5rem;
 }
 #services {
-  background-color: #afadad;
+  background-color: rgb(244, 244, 244);
   color: black;
 }
 .main-container2 {
@@ -189,10 +189,12 @@ section h2 {
   background-color: white;
   color: black;
   transition: all 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
 }
 .service-box:hover {
   cursor: pointer;
   transform: scale(1.1);
+  /* box-shadow: 0 0 10px black; */
 }
 .service-box img {
   width: 100%;
@@ -204,7 +206,7 @@ section h2 {
   padding-left: 1.5rem;
 }
 #contact {
-  background-color: white;
+  background-color: rgb(244, 244, 244);;
   color: black;
 }
 .main-container3 {
@@ -220,9 +222,10 @@ section h2 {
   margin-bottom: 0.5rem;
 }
 .main-container3 .form {
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
   width: 500px;
   padding: 15px;
+  background-color: white;
 }
 .main-container3 .form label {
   font-size: 20px;
@@ -257,8 +260,8 @@ section h2 {
 .main-container3 .details {
   /* border: 1px solid red; */
   width: 500px;
-  padding: 10px;
-  background-color: #cecbcb;
+  padding: 10px 0px 0px 25px;
+  background-color: white;
 }
 .main-container3 .details a {
   text-decoration: none;
