@@ -137,6 +137,7 @@ section {
   display: flex;
   justify-content: space-between;
   color: black;
+  text-align: justify;
 }
 #about .main-container1 div {
   padding: 10px;
@@ -190,6 +191,7 @@ section h2 {
   color: black;
   transition: all 0.4s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
+  text-align: justify;
 }
 .service-box:hover {
   cursor: pointer;
